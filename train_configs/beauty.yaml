@@ -1,0 +1,8 @@
+key: kgmc_beauty_keybert
+
+dataset:
+  name: beauty
+  file_name: beauty
+  keywords: keybert_cooc_matrix.npy
+
+

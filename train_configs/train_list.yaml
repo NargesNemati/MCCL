@@ -1,0 +1,8 @@
+files:
+
+  # - ../train_configs/music.yaml
+  # - ../train_configs/movie.yaml
+  # - ../train_configs/beauty.yaml
+  - ../train_configs/office.yaml
+  # - ../train_configs/tools.yaml
+

@@ -1,0 +1,8 @@
+key: kgmc_tools_keybert
+
+dataset:
+  name: tools
+  file_name: tools
+  keywords: keybert_cooc_matrix.npy
+
+

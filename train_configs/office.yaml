@@ -1,0 +1,9 @@
+---
+key: kgmc_office_keybert
+
+dataset:
+  name: office
+  file_name: office
+  keywords: keybert_cooc_matrix.npy
+
+

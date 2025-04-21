@@ -1,0 +1,9 @@
+---
+key: kgmc_music_keybert
+
+dataset:
+  name: music
+  file_name: music
+  keywords: keybert_cooc_matrix.npy
+
+

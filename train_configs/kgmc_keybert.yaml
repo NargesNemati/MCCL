@@ -1,0 +1,22 @@
+---
+key: kgmc_keybert
+model:
+  type: IGMC
+  num_relations: 8
+
+dataset:
+  keyword_edge_k: 10
+  names: 
+    - music
+    - game
+    - office
+    - sports
+    - book
+    - toy
+    - office
+  keywords: keybert_cooc_matrix.npy
+
+train:
+  device: 0
+  epochs: 20
+  batch_size: 64

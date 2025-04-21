@@ -1,0 +1,37 @@
+2025-04-21 21:02:35,268 - train args
+2025-04-21 21:02:35,268 - key: kgmc_office_keybert
+2025-04-21 21:02:35,269 - dataset: office
+2025-04-21 21:02:35,269 - datasets: None
+2025-04-21 21:02:35,269 - keywords: keybert_cooc_matrix.npy
+2025-04-21 21:02:35,269 - item_cooc_edge_df: None
+2025-04-21 21:02:35,269 - user_cooc_edge_df: None
+2025-04-21 21:02:35,269 - user_item_cooc_edge_df: None
+2025-04-21 21:02:35,269 - model_type: ['mccl']
+2025-04-21 21:02:35,269 - hop: 1
+2025-04-21 21:02:35,269 - in_nfeats: 32
+2025-04-21 21:02:35,269 - out_nfeats: 32
+2025-04-21 21:02:35,269 - in_efeats: 32
+2025-04-21 21:02:35,269 - out_efeats: 32
+2025-04-21 21:02:35,269 - num_heads: 4
+2025-04-21 21:02:35,269 - node_features: None
+2025-04-21 21:02:35,269 - parameters: None
+2025-04-21 21:02:35,269 - num_relations: 8
+2025-04-21 21:02:35,269 - edge_dropout: 0.2
+2025-04-21 21:02:35,269 - latent_dims: [32, 32, 32, 32]
+2025-04-21 21:02:35,269 - device: 0
+2025-04-21 21:02:35,269 - log_dir: log
+2025-04-21 21:02:35,269 - log_interval: 200
+2025-04-21 21:02:35,269 - train_lrs: [0.001]
+2025-04-21 21:02:35,269 - train_epochs: 60
+2025-04-21 21:02:35,269 - batch_size: 128
+2025-04-21 21:02:35,269 - weight_decay: 0.0
+2025-04-21 21:02:35,269 - lr_decay_step: 10
+2025-04-21 21:02:35,269 - lr_decay_factor: 0.9
+2025-04-21 21:02:35,269 - ndcg_k: 10
+2025-04-21 21:02:35,269 - DATASET : office
+2025-04-21 21:02:38,290 - Loading network finished ...
+
+2025-04-21 21:02:38,290 - Start training ... learning rate : 0.001
+2025-04-21 21:03:32,919 - === office Epoch 1, train loss 33.260521, val rmse -1.000000, test rmse 0.847993 ===
+2025-04-21 21:03:32,919 - new best test rmse 0.847993 ===
+2025-04-21 21:04:27,709 - === office Epoch 2, train loss 0.459200, val rmse -1.000000, test rmse 0.848972 ===

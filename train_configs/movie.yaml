@@ -1,0 +1,9 @@
+---
+key: kgmc_movie_keybert
+
+dataset:
+  name: movie
+  file_name: movie
+  keywords: keybert_cooc_matrix.npy
+
+

@@ -1,0 +1,16 @@
+---
+key: music_igmc_zeroshot
+model:
+  type: IGMC
+  num_relations: 5
+  # parameters: igmc_music_0.1313.pt
+  parameters: igmc_music_0.2341.pt
+  
+dataset:
+  names: 
+    - music
+    # - game
+    # - sports
+    # - toy
+    # - book
+    # - office
