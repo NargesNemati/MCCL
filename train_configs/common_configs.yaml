@@ -4,6 +4,7 @@ model:
     # - kgmc
     # - autoencoder
     # - ATTENTION
+    # - igmc
     - mccl
     # - kgmc_sage
   hop: 1
