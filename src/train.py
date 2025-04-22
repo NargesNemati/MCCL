@@ -60,7 +60,7 @@ def train_epoch(model, model_1, model_2, loss_fn, bce_loss_fn, optimizer, optimi
             labe_edge_mask = inputs.edata['edge_mask']
             preds, all_preds, emb= model(inputs)
 
-        elif train_model == 'kgmc':
+        elif train_model == 'kgmc' or train_model == 'igmc':
             inputs = batch[0].to(device)
             all_subg_labels = inputs.edata['etype'].to(device)
             labels = batch[1].to(device)
@@ -120,7 +120,7 @@ def train_epoch(model, model_1, model_2, loss_fn, bce_loss_fn, optimizer, optimi
             loss.backward()
             optimizer.step()
 
-        if train_model == 'kgmc':
+        if train_model == 'kgmc' or train_model == 'igmc':
             loss = loss_fn(preds, labels)
             
             optimizer.zero_grad()
@@ -248,7 +248,7 @@ def train(args:EasyDict, logger, model_type, p):
                     edge_dropout=args.edge_dropout,
                     ).to(args.device)
         
-    elif model_type == 'kgmc':
+    elif model_type == 'kgmc' or model_type == 'igmc':
             model = KGMC(in_feats=in_feats, 
                     latent_dim=args.latent_dims,
                     num_relations=args.num_relations, 
@@ -291,7 +291,8 @@ def train(args:EasyDict, logger, model_type, p):
         'kgmc_sage':evaluate,
         'ATTENTION':evaluate,
         'autoencoder':evaluate,
-        # 'IGMC': evaluate,
+        'igmc': evaluate,
+        'kgmc': evaluate,
     }
     eval_func = eval_func_map.get(model_type, evaluate)
 
@@ -455,7 +456,7 @@ def main():
                                 regression=True,
                                 edge_dropout=args.edge_dropout,
                                 ).to(args.device)
-                    elif mdl == 'kgmc':
+                    elif mdl == 'kgmc' or mdl == 'igmc':
                         model = KGMC(in_feats=in_feats, 
                                 latent_dim=args.latent_dims,
                                 num_relations=args.num_relations, 
