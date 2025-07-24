@@ -1,4 +1,4 @@
-This project is based on our proposed method **MCCCL**  
+This project is based on our proposed method **MCCL**  
 You can find the full paper here: [MCCL](https://arxiv.org/pdf/2506.10658?)
 
 - Original dataset source: https://jmcauley.ucsd.edu/data/amazon/
