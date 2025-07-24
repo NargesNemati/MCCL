@@ -1,3 +1,6 @@
+This project is based on our proposed method **MCCCL**  
+You can find the full paper here: [MCCL](https://arxiv.org/pdf/2506.10658?)
+
 - Original dataset source: https://jmcauley.ucsd.edu/data/amazon/
 - Set the desired dataset in train_list.yaml.
  
